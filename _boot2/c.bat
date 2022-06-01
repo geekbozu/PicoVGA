@@ -1,7 +1,7 @@
 @echo off
 rem Compilation...
 
-set PATH=..\_tools;C:\ARM10\bin;%PATH%
+set PATH=..\_tools;..\_gcc\bin;%PATH%
 
 call _c1.bat boot2_generic_03h
 if not exist boot2_generic_03h.bin goto end
