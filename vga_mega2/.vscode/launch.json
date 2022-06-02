@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "build",
+            "executable": "${workspaceFolder}/build/program.elf",
+            "name": "jlinkdebug",
+            "request": "launch",
+            "type": "cortex-debug",
+            "showDevDebugOutput": none,
+            "servertype": "jlink",
+            "numberOfProcessors": 2,
+            "targetProcessor": 0,
+            "device": "RP2040_M0_0",
+            "interface": "swd",
+            "runToEntryPoint":  "main",
+            "gdbPath": "${workspaceFolder}/../_gcc/bin/arm-none-eabi-gdb.exe",
+            "svdFile": "${workspaceFolder}/../_sdk/rp2040.svd",
+            "postRestartCommands": [
+                "load",
+                "b main",
+                "c"
+            ],
+        }
+    ]
+}
