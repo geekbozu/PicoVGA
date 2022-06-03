@@ -8,7 +8,7 @@
 ASRC +=
 
 # C source files
-CSRC +=
+CSRC += src/image.c
 
 # C++ source files
 SRC += src/main.cpp

@@ -12,8 +12,8 @@
 
 // screen resolution
 #define DRV VideoVGA		// timings driver
-#define WIDTH	320		// screen width
-#define HEIGHT	480		// screen height
-#define DBLY	False		// double lines
+#define WIDTH	584		// screen width
+#define HEIGHT	192		// screen height
+#define DBLY	true		// double lines
 #define WIDTHBYTE WIDTH/2		// bytes per line
 #endif // _MAIN_H
